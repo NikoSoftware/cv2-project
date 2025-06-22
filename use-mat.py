@@ -11,6 +11,10 @@ if __name__ == '__main__':
 
     b,g,r = cv2.split(img)
 
+    img2 = cv2.merge([b,g,r])
+
+
 
     cv2.imshow('frame',g)
+    cv2.imshow('frame2',img2)
     cv2.waitKey(0)
