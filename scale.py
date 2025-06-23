@@ -13,9 +13,11 @@ if __name__ == '__main__':
 
     saimg = cv2.resize(img,None, fx=0.3, fy=0.3, interpolation=cv2.INTER_AREA)
 
+    img6 = cv2.resize(img,(640,640))
+
     cv2.imshow('img1', img)
 
-    #cv2.imshow('img', reimg)
+    cv2.imshow('img6', img6)
 
 
     cv2.imshow('img3', saimg)
